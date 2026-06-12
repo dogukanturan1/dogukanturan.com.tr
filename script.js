@@ -45,7 +45,7 @@
             proj_h: "Sahada çalışan sistemler",
             proj_sub: "Gerçek işletmeler için geliştirdiğim, her gün kullanılan çözümlerden bir seçki.",
             p1_t: "Otomatik Fiyatlandırma Motoru",
-            p1_d: "Yüklenen teknik çizimi saniyeler içinde analiz eder: kesim uzunluğu, parça detayı, malzeme. Saatler süren manuel teklif sürecini 30 saniyeye indirir.",
+            p1_d: "Yüklenen teknik çizimi (DXF) saniyeler içinde analiz eder: kesim uzunluğu, parça detayı, malzeme. Lazer kesimde saatler süren manuel teklif sürecini 30 saniyeye indirir.",
             p2_t: "Çok Şirketli Holding ERP",
             p2_d: "Birden fazla şirketi tek çatıda yöneten ERP: satış, satınalma, finans, CRM, raporlama. Yetkilendirme ve kayıt güvenliği standart.",
             p3_t: "Üretim Yönetim Sistemi (MES)",
@@ -124,7 +124,7 @@
             proj_h: "Systems running in the field",
             proj_sub: "A selection of solutions I built for real businesses, used every single day.",
             p1_t: "Automatic Quotation Engine",
-            p1_d: "Analyzes an uploaded technical drawing in seconds: cut length, part details, material. Turns an hours-long manual quoting process into 30 seconds.",
+            p1_d: "Analyzes an uploaded technical drawing (DXF) in seconds: cut length, part details, material. Turns hours of manual laser-cutting quotes into 30 seconds.",
             p2_t: "Multi-Company Holding ERP",
             p2_d: "One ERP managing multiple companies: sales, purchasing, finance, CRM, reporting. Access control and record security as standard.",
             p3_t: "Manufacturing Execution System (MES)",
@@ -170,7 +170,7 @@
     const META = {
         tr: {
             title: "Doğukan Turan | Yazılım Uzmanı ve ERP Sistem Yöneticisi",
-            desc: "Doğukan Turan — Yazılım Uzmanı ve ERP Sistem Yöneticisi. Eski süreçleri yeni sistemlere dönüştürürüm: kurumsal ERP, üretim yönetimi (MES), DXF otomasyonu ve yapay zekâ entegrasyonları."
+            desc: "Doğukan Turan — Yazılım Uzmanı ve ERP Sistem Yöneticisi. Türkiye'de sanayi şirketlerine kurumsal ERP, üretim takip sistemi (MES), DXF otomasyonu ve yapay zekâ."
         },
         en: {
             title: "Doğukan Turan | Software Specialist & ERP Systems Manager",
