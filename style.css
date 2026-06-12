@@ -267,7 +267,8 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .swap .new .ic { color: var(--acc); }
 
 /* ---------- About ---------- */
-.about-grid { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 64px; align-items: center; }
+.about-grid { display: grid; grid-template-columns: auto 1fr; gap: 64px; align-items: center; }
+.about-photo { width: 300px; max-width: 100%; }
 .win {
     border: 1px solid var(--line); border-radius: 20px; overflow: hidden;
     background: var(--card);
@@ -276,7 +277,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
     transition: transform 0.4s var(--ease);
 }
 .win:hover { transform: rotate(0deg) scale(1.015); }
-.win img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 12%; }
+.win img { width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 12%; }
 .about-photo.no-photo { display: none; }
 .about-copy p { color: var(--mut); font-size: 1.03rem; margin-bottom: 18px; max-width: 58ch; }
 
@@ -400,7 +401,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 @media (max-width: 960px) {
     .hero-grid { grid-template-columns: 1fr; gap: 48px; }
     .about-grid { grid-template-columns: 1fr; gap: 44px; }
-    .about-photo { max-width: 380px; }
+    .about-photo { width: 300px; }
     .cards { grid-template-columns: 1fr; }
     .card-wide { grid-column: auto; }
     .servs, .stackg { grid-template-columns: 1fr 1fr; }
