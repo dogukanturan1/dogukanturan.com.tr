@@ -41,12 +41,14 @@
 
 html { scroll-behavior: smooth; scroll-padding-top: 96px; }
 
+html { overflow-x: hidden; }
 body {
     font-family: var(--font-b);
     background: var(--bg);
     color: var(--text);
     line-height: 1.65;
     overflow-x: hidden;
+    max-width: 100vw;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -165,6 +167,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
     width: min(580px, 92vw); height: min(580px, 92vw);
     transform: translate(-50%, -50%);
     pointer-events: none; z-index: 0;
+    overflow: hidden; /* rotating rings' bounding boxes must not widen the page */
 }
 .ring { position: absolute; border-radius: 50%; }
 .ring::after {
@@ -172,7 +175,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
     width: 9px; height: 9px; border-radius: 50%;
 }
 .ring-1 {
-    inset: 0; border: 1.5px dashed rgba(12, 163, 95, 0.28);
+    inset: 7px; border: 1.5px dashed rgba(12, 163, 95, 0.28);
     animation: spin 46s linear infinite;
 }
 .ring-1::after { background: var(--acc); box-shadow: 0 0 0 4px var(--acc-soft); }
@@ -412,6 +415,20 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
     .links { display: none; }
 }
 
+@media (max-width: 700px) {
+    /* Compact navbar: logo + flags + CTA must fit 360px screens */
+    .nav { padding: 12px 0; }
+    .nav.scrolled { padding: 9px 0; }
+    .nav-in { gap: 10px; }
+    .logo { font-size: 14px; }
+    .caret { width: 6px; height: 14px; margin-left: 4px; }
+    .nav-right { gap: 9px; }
+    .lang { gap: 6px; }
+    .lang-opt svg { width: 21px; height: 14px; }
+    .lang-opt.active { transform: scale(1.05); box-shadow: 0 0 0 1.5px #fff, 0 0 0 3px var(--acc); }
+    .nav-right .btn-sm { padding: 8px 13px; font-size: 0.78rem; }
+}
+
 @media (max-width: 600px) {
     .container { padding: 0 18px; }
     .hero { padding: 132px 0 72px; }
@@ -423,12 +440,22 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
     .c-rows a { align-items: center; }
     .feed-body { min-height: 230px; font-size: 13.5px; }
     .hero-visual { padding: 54px 0; }
-    .orbits { width: 420px; height: 420px; }
+    .orbits { width: min(420px, 90vw); height: min(420px, 90vw); }
     .ring-2 { inset: 46px; }
     .f-chip { font-size: 11.5px; padding: 7px 12px; }
     .chip-ai { right: 0; top: 6px; }
     .chip-gear { left: 0; top: 6px; }
     .chip-ok { left: 12px; bottom: 4px; }
+}
+
+/* Very small phones (≤380px): squeeze the nav further */
+@media (max-width: 380px) {
+    .container { padding: 0 14px; }
+    .logo { font-size: 13px; letter-spacing: -0.03em; }
+    .nav-right .btn-sm { padding: 7px 10px; font-size: 0.74rem; }
+    .lang-opt svg { width: 19px; height: 12.6px; }
+    .stats { grid-template-columns: 1fr 1fr; }
+    .about-photo { width: 100%; max-width: 280px; }
     .swap { padding: 16px 18px; }
     .foot-in { justify-content: center; text-align: center; }
 }
