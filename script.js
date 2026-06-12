@@ -20,8 +20,8 @@
             term_title: "Sistem akışı — canlı",
             chip_ai: "Yapay Zekâ", chip_gear: "Otomasyon", chip_ok: "Rapor gönderildi — 07:00",
 
-            tf_kicker: "Eskiden → yeniye",
-            tf_h: "Eskiyi alırım, yeniyi inşa ederim.",
+            tf_kicker: "Dönüşüm",
+            tf_h: "Saatler süren işleri, saniyeler süren sistemlere dönüştürürüm.",
             tf_sub: "Her projem bir dönüşüm hikâyesi. İşte gerçek projelerimden örnekler:",
             d1_old: "Excel’de dağınık müşteri ve cari takibi",
             d1_new: "Tek ekranda CRM, cari ve raporlama — holding ERP",
@@ -99,8 +99,8 @@
             term_title: "System feed — live",
             chip_ai: "AI", chip_gear: "Automation", chip_ok: "Report sent — 07:00",
 
-            tf_kicker: "From old → to new",
-            tf_h: "I take the old and build the new.",
+            tf_kicker: "Transformation",
+            tf_h: "I turn work that takes hours into systems that take seconds.",
             tf_sub: "Every project is a transformation story. Examples from my real projects:",
             d1_old: "Customer and account tracking scattered across Excel",
             d1_new: "CRM, accounts and reporting on one screen — holding ERP",

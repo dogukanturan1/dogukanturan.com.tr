@@ -151,12 +151,14 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .hero-sub { color: var(--mut); font-size: 1.08rem; max-width: 50ch; margin-bottom: 36px; }
 .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
 
-/* Hero visual: feed + AI decorations */
-.hero-visual { position: relative; }
+/* Hero visual: feed + AI decorations.
+   Top/bottom padding reserves space so the floating chips sit
+   AROUND the window, never on top of its content. */
+.hero-visual { position: relative; padding: 62px 0; }
 
 .orbits {
     position: absolute; left: 50%; top: 50%;
-    width: 580px; height: 580px;
+    width: min(580px, 92vw); height: min(580px, 92vw);
     transform: translate(-50%, -50%);
     pointer-events: none; z-index: 0;
 }
@@ -186,11 +188,11 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
     box-shadow: var(--shadow-md);
     animation: floaty 5.5s ease-in-out infinite alternate;
 }
-.chip-ai { top: -18px; right: -6px; }
+.chip-ai { top: 8px; right: 4px; }
 .chip-ai .spark { color: var(--acc); animation: sparkle 1.9s ease-in-out infinite; }
-.chip-gear { top: 24%; left: -30px; animation-duration: 7s; animation-delay: 0.7s; }
+.chip-gear { top: 8px; left: 4px; animation-duration: 7s; animation-delay: 0.7s; }
 .chip-gear .gear { color: var(--info); animation: spin 9s linear infinite; }
-.chip-ok { bottom: -16px; left: 22px; animation-duration: 6.2s; animation-delay: 0.3s; }
+.chip-ok { bottom: 6px; left: 24px; animation-duration: 6.2s; animation-delay: 0.3s; }
 .chip-ok .okdot {
     width: 18px; height: 18px; border-radius: 50%; flex: none;
     display: grid; place-items: center;
@@ -415,12 +417,13 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
     .c-rows { flex-direction: column; gap: 18px; align-items: center; }
     .c-rows a { align-items: center; }
     .feed-body { min-height: 230px; font-size: 13.5px; }
+    .hero-visual { padding: 54px 0; }
     .orbits { width: 420px; height: 420px; }
     .ring-2 { inset: 46px; }
     .f-chip { font-size: 11.5px; padding: 7px 12px; }
-    .chip-ai { right: 2px; }
-    .chip-gear { left: -8px; }
-    .chip-ok { left: 8px; }
+    .chip-ai { right: 0; top: 6px; }
+    .chip-gear { left: 0; top: 6px; }
+    .chip-ok { left: 12px; bottom: 4px; }
     .swap { padding: 16px 18px; }
     .foot-in { justify-content: center; text-align: center; }
 }
