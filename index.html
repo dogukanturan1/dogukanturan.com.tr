@@ -99,13 +99,33 @@
                     </div>
                 </div>
 
-                <!-- Live system feed -->
-                <div class="feed" data-reveal aria-label="Canlı sistem akışı animasyonu">
-                    <div class="feed-bar">
-                        <span class="fdot r"></span><span class="fdot y"></span><span class="fdot g"></span>
-                        <span class="feed-title" data-i18n="term_title">Sistem akışı — canlı</span>
+                <!-- Live system feed + AI decorations -->
+                <div class="hero-visual" data-reveal>
+                    <div class="orbits" aria-hidden="true">
+                        <span class="ring ring-1"></span>
+                        <span class="ring ring-2"></span>
                     </div>
-                    <div class="feed-body" id="termBody" aria-live="off"></div>
+
+                    <span class="f-chip chip-ai" aria-hidden="true">
+                        <svg class="spark" viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M12 2l2.1 6.4L21 11l-6.9 2.6L12 20l-2.1-6.4L3 11l6.9-2.6L12 2z"/></svg>
+                        <span data-i18n="chip_ai">Yapay Zekâ</span>
+                    </span>
+                    <span class="f-chip chip-gear" aria-hidden="true">
+                        <svg class="gear" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h.01a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51h.01a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v.01a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                        <span data-i18n="chip_gear">Otomasyon</span>
+                    </span>
+                    <span class="f-chip chip-ok" aria-hidden="true">
+                        <span class="okdot">✓</span>
+                        <span data-i18n="chip_ok">Rapor gönderildi — 07:00</span>
+                    </span>
+
+                    <div class="feed" aria-label="Canlı sistem akışı animasyonu">
+                        <div class="feed-bar">
+                            <span class="fdot r"></span><span class="fdot y"></span><span class="fdot g"></span>
+                            <span class="feed-title" data-i18n="term_title">Sistem akışı — canlı</span>
+                        </div>
+                        <div class="feed-body" id="termBody" aria-live="off"></div>
+                    </div>
                 </div>
             </div>
         </section>

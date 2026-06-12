@@ -18,6 +18,7 @@
             hero_sub: "Yazılım Uzmanı ve ERP Sistem Yöneticisiyim. Sanayi şirketlerinin eski, manuel süreçlerini alır; sahada her gün çalışan modern sistemlere dönüştürürüm.",
             hero_cta1: "Projelerimi gör", hero_cta2: "Nasıl çözüyorum?",
             term_title: "Sistem akışı — canlı",
+            chip_ai: "Yapay Zekâ", chip_gear: "Otomasyon", chip_ok: "Rapor gönderildi — 07:00",
 
             tf_kicker: "Eskiden → yeniye",
             tf_h: "Eskiyi alırım, yeniyi inşa ederim.",
@@ -96,6 +97,7 @@
             hero_sub: "I'm a Software Specialist and ERP Systems Manager. I take the old, manual processes of industrial companies and turn them into modern systems that run in the field every day.",
             hero_cta1: "See my work", hero_cta2: "How I solve it",
             term_title: "System feed — live",
+            chip_ai: "AI", chip_gear: "Automation", chip_ok: "Report sent — 07:00",
 
             tf_kicker: "From old → to new",
             tf_h: "I take the old and build the new.",
